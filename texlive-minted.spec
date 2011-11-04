@@ -1,3 +1,9 @@
+# revision 24002
+# category Package
+# catalog-ctan /macros/latex/contrib/minted
+# catalog-date 2011-09-18 00:13:37 +0200
+# catalog-license lppl1.3
+# catalog-version 1.7
 Name:		texlive-minted
 Version:	1.7
 Release:	1
@@ -46,6 +52,7 @@ output using fancyvrb.
 #- source
 %doc %{_texmfdistdir}/source/latex/minted/minted.dtx
 %doc %{_texmfdistdir}/source/latex/minted/minted.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ output using fancyvrb.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
