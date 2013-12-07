@@ -6,7 +6,7 @@
 # catalog-version 1.7
 Name:		texlive-minted
 Version:	1.7
-Release:	3
+Release:	4
 Summary:	Highlighted source code for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minted
