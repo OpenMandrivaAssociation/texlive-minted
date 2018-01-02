@@ -1,12 +1,6 @@
-# revision 24002
-# category Package
-# catalog-ctan /macros/latex/contrib/minted
-# catalog-date 2011-09-18 00:13:37 +0200
-# catalog-license lppl1.3
-# catalog-version 1.7
 Name:		texlive-minted
-Version:	1.7
-Release:	10
+Version:	2.5
+Release:	1
 Summary:	Highlighted source code for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minted
@@ -35,13 +29,10 @@ output using fancyvrb.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/minted/minted.sty
-%doc %{_texmfdistdir}/doc/latex/minted/Makefile
-%doc %{_texmfdistdir}/doc/latex/minted/README
-%doc %{_texmfdistdir}/doc/latex/minted/minted.pdf
+%{_texmfdistdir}/tex/latex/minted
+%doc %{_texmfdistdir}/doc/latex/minted
 #- source
-%doc %{_texmfdistdir}/source/latex/minted/minted.dtx
-%doc %{_texmfdistdir}/source/latex/minted/minted.ins
+%doc %{_texmfdistdir}/source/latex/minted
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,17 +43,3 @@ output using fancyvrb.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.7-2
-+ Revision: 754014
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.7-1
-+ Revision: 719039
-- texlive-minted
-- texlive-minted
-- texlive-minted
-- texlive-minted
-
