@@ -1,5 +1,5 @@
 Name:		texlive-minted
-Version:	64026
+Version:	65252
 Release:	1
 Summary:	Highlighted source code for LaTeX
 Group:		Publishing
