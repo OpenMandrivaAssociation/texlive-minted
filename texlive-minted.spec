@@ -1,6 +1,6 @@
 Name:		texlive-minted
-Version:	65252
-Release:	2
+Version:	68476
+Release:	1
 Summary:	Highlighted source code for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minted
