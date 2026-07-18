@@ -1,5 +1,6 @@
 %global tl_name minted
 %global tl_revision 78270
+%global tl_bin_links latexminted:%{_texmfdistdir}/scripts/minted/latexminted.py
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -27,6 +28,8 @@ Requires:	texlive(pgfopts)
 Requires:	texlive(tools)
 Requires:	texlive(xcolor)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 The package that facilitates expressive syntax highlighting in LaTeX
